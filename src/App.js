@@ -44,7 +44,7 @@ class App extends Component {
       const games = uniqueList.filter( a => a !== undefined)
       games.reverse()
       uniqueList = games
-      return uniqueList.map(a => ({ label: a, value: Number(a.slice(0,4)) }))
+      return uniqueList.map(a => ({ label: a, value: a }))
     }
     if (key === 'Sex') {
       return uniqueList.map(a => {
@@ -57,8 +57,8 @@ class App extends Component {
 
   onYearChange = e => {
     if (e) {
-      const year = e.value
-      const list = this.state.medalists.filter(s => s.Year === year)
+      const games = e.value
+      const list = this.state.medalists.filter(s => s.Games === games)
       const sportList = this.getUniqueList(list, 'Sport')
       this.setState({ year: e, sportList, sport: null, genderList: [], gender: null })
       return
