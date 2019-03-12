@@ -82,14 +82,14 @@ class App extends Component {
 
   getGenderList = () => {
     const { medalists, year, sport } = this.state
-    const list = medalists.filter(m => m.Year === year.value && m.Sport === sport.value)
+    const list = medalists.filter(m => m.Games === year.value && m.Sport === sport.value)
     const genders = this.getUniqueList(list, 'Sex').reverse()
     this.setState({ genderList: genders })
   }
 
   getResults = () => {
     const { medalists, year, sport, gender } = this.state
-    const list = medalists.filter( r => r.Year === year.value && r.Sport === sport.value)
+    const list = medalists.filter( r => r.Games === year.value && r.Sport === sport.value)
     if (gender.value === 'M') {
       this.setState({ results: list.filter(m => m.Sex === 'M') })
     } else if (gender.value === 'F') {
