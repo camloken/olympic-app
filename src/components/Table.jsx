@@ -1,6 +1,6 @@
 import React from 'react';
-import cc from'./countryConverter'
-import './results.css'
+import cc from'../utils/countryConverter'
+import '../css/results.css'
 
 const Table = props => {
   const { athletes } = props
@@ -16,7 +16,6 @@ const Table = props => {
   })
 
   const table = sortedByMedal.map((a, i) =>{
-    const team = a['Team'].replace(/[0-9]|-/gi, '')
     const country = cc(a.NOC)
     return (
       <div key={`athlete${i}`} className="row flex-row">

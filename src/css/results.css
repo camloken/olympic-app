@@ -19,7 +19,7 @@
 .flag.flag-icon {
   padding: 0;
   margin-right: 5px;
-  border-radius: 5px;
+  border-radius: 4px;
   height: 23px;
   width: 30px;
   overflow: hidden;
@@ -35,12 +35,14 @@
   border-radius: 10px;
 }
 
-.Gold, .Silver, .Bronze {
+.Gold,
+.Silver,
+.Bronze {
   padding: 0;
   height: 22px;
   width: 22px;
   border-radius: 50%;
-  background-image: linear-gradient(transparent, rgba(0,0,0,0.05));
+  background-image: linear-gradient(70deg, rgba(0,0,0,0.07), transparent);
 }
 
 .Gold {

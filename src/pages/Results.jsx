@@ -1,6 +1,6 @@
-import React from 'react';
-import Table from'./Table'
-import './results.css'
+import React from 'react'
+import Table from'../components/Table'
+import '../css/results.css'
 
 const Results = props => {
   const { data } = props

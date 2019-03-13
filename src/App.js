@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import Select from 'react-select';
-import Loader from './Loader';
-import Results from './Results'
-import Header from './Header'
+import SearchBlock from './pages/SearchBlock'
+import Results from './pages/Results'
+import Header from './components/Header'
+import Loader from './components/Loader';
 import Papa from 'papaparse'
-import './flags-css/flag-icon.css';
-import './App.css';
+import './css/flag-icon.css';
+import './css/app.css';
 
 class App extends Component {
   initalState = {
@@ -110,49 +110,7 @@ class App extends Component {
     })
   }
 
-  renderSearchBlock = () => {
-    // This should really be it's own component, but for now I'm leaving it here
-    const { yearList, year, sportList, sport, genderList, gender } = this.state
-    return (
-      <div className="search-block">
-        <h3 className="title text-center">Find Olympic Medalists</h3>
-        <Select
-          id="year"
-          value={this.state.year}
-          onChange={e => this.onYearChange(e)}
-          options={yearList}
-          placeholder="Select a past olympic games..."
-          isClearable
-          isSearchable
-          className="select w-100"
-        />
-        { year && (
-            <Select
-              id="sport"
-              value={sport}
-              onChange={e => this.onSportChange(e)}
-              options={sportList}
-              placeholder="Select a sport..."
-              isClearable
-              isSearchable
-              className="select w-100"
-            />
-        )}
-        { sport && (
-            <Select
-              id="gender"
-              value={gender}
-              onChange={e => this.onGenderChange(e)}
-              options={genderList}
-              placeholder="Select mens or womens sports..."
-              isClearable
-              isSearchable
-              className="select w-100"
-            />
-        )}
-      </div>
-    )
-}
+
 
   render() {
     const { yearList, results } = this.state
@@ -163,7 +121,15 @@ class App extends Component {
           <div className="app-content">
             { yearList.length < 1
                 ? <Loader />
-                : (results.length < 1 ? this.renderSearchBlock() : <Results data={results} />)
+                : (results.length < 1 
+                    ? <SearchBlock
+                        {...this.state}
+                        onYearChange={e => this.onYearChange(e)}
+                        onSportChange={e => this.onSportChange(e)}
+                        onGenderChange={e => this.onGenderChange(e)}
+                      />
+                    : <Results data={results} />
+                  )
             }
           </div>
         </div>

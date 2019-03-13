@@ -1,5 +1,5 @@
 import React, { Fragment} from 'react';
-import Rings from './olympic-rings.svg'
+import Rings from '../img/olympic-rings.svg'
 
 const Header = props => {
   const genderTitle = props.gender && props.gender.value === 'M' ? 'Mens ' : 'Womens '
