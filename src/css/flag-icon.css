@@ -18,6 +18,48 @@
 .flag-icon.flag-icon-squared {
   width: 1em;
 }
+
+.flag-icon-aho {
+  background-image: url(../flags/4x3/aho.svg);
+}
+.flag-icon-anz {
+  background-image: url(../flags/4x3/anz.svg);
+}
+.flag-icon-boh {
+  background-image: url(../flags/4x3/boh.svg);
+}
+.flag-icon-bwi {
+  background-image: url(../flags/4x3/bwi.svg);
+}
+.flag-icon-eua {
+  background-image: url(../flags/4x3/eua.svg);
+}
+.flag-icon-eun {
+  background-image: url(../flags/4x3/eun.svg);
+}
+.flag-icon-gdr {
+  background-image: url(../flags/4x3/gdr.svg);
+}
+.flag-icon-ru1 {
+  background-image: url(../flags/4x3/ru1.svg);
+}
+.flag-icon-scg {
+  background-image: url(../flags/4x3/scg.svg);
+}
+.flag-icon-tch {
+  background-image: url(../flags/4x3/tch.svg);
+}
+.flag-icon-urs {
+  background-image: url(../flags/4x3/urs.svg);
+}
+.flag-icon-yug {
+  background-image: url(../flags/4x3/yug.svg);
+}
+.flag-icon-zzx {
+  background-image: url(../flags/4x3/zzx.svg);
+}
+
+
 .flag-icon-ad {
   background-image: url(../flags/4x3/ad.svg);
 }
