@@ -1,5 +1,6 @@
 import React from 'react'
 import Table from'../components/Table'
+import '../css/flag-icon.css'
 import '../css/results.css'
 
 const Results = props => {
