@@ -15,7 +15,7 @@ const SearchBlock = props => {
   } = props
   return (
     <div className="search-block">
-      <h3 className="title text-center">Find Olympic Medalists</h3>
+      <h3 className="title text-center mt--40">Find Olympic Medalists</h3>
       <Select
         id="year"
         value={year}

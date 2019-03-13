@@ -19,8 +19,11 @@ const Table = props => {
     const country = cc(a.NOC)
     return (
       <div key={`athlete${i}`} className="row flex-row">
-        <span className={`flag flag-icon flag-icon-${country}`}></span>
-        <b>{a.NOC}</b>
+        <span
+          className={`flag flag-icon flag-icon-${country} cursor`}
+          title={a.Team}
+        />
+        <b className="cursor" title={a.Team}>{a.NOC}</b>
         <div className="flex-1">{a.Name}</div>
         <div>{a.Medal}</div>
         <div className={a.Medal.toLowerCase()} />
