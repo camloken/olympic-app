@@ -9,7 +9,7 @@
   color: #444;
   font-weight: 500;
   padding: 20px 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  border-top: 1px solid var(--grey-hint);
 }
 
 .row > * {
@@ -31,28 +31,28 @@
   padding: 0 20px;
   margin: 20px 0 60px;
   background: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--grey-hint);
   border-radius: 10px;
 }
 
-.Gold,
-.Silver,
-.Bronze {
+.gold,
+.silver,
+.bronze {
   padding: 0;
   height: 22px;
   width: 22px;
   border-radius: 50%;
-  background-image: linear-gradient(70deg, rgba(0,0,0,0.07), transparent);
+  background-image: linear-gradient(145deg, var(--grey-hint), transparent);
 }
 
-.Gold {
+.gold {
   background-color: #ffd044;
 }
 
-.Silver {
+.silver {
   background-color: silver;
 }
 
-.Bronze {
+.bronze {
   background-color: #cd7f32;
 }

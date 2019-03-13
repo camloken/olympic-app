@@ -110,8 +110,6 @@ class App extends Component {
     })
   }
 
-
-
   render() {
     const { yearList, results } = this.state
     return (

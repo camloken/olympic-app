@@ -23,7 +23,7 @@ const Table = props => {
         <b>{a.NOC}</b>
         <div className="flex-1">{a.Name}</div>
         <div>{a.Medal}</div>
-        <div className={a.Medal} />
+        <div className={a.Medal.toLowerCase()} />
       </div>
     )
   })

@@ -1,6 +1,7 @@
 :root {
   --text-grey: #555;
   --text-light-grey: #777;
+  --grey-hint: rgba(0, 0, 0, 0.08);
 }
 
 html, body {
@@ -37,7 +38,7 @@ html, body {
   font-size: 1.25rem;
   font-weight: 600;
   color: var(--text-grey);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 10px var(--grey-hint);
   overflow: hidden;
   z-index: 1;
 }

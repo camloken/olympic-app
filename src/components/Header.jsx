@@ -6,20 +6,15 @@ const Header = props => {
   return (
     <header className="app-header text-center">
       <div className="flex-row flex-align-center">
-          { props.results.length < 1
-            ? (
-              <Fragment>
+          {props.results.length < 1
+            ? <Fragment>
                 <img src={Rings} alt="logo" className="logo" />
                 <div className="pr-20">Olympic Medalists</div>
               </Fragment>
-              )
-            : (
-                <div onClick={props.onClick} className="cancelable-title">
-                  <div className="close-x">&times;</div>
-                  <div>{`${props.year.value} ${genderTitle}${props.sport.value}`}</div>
-                </div>
-              )
-          }
+            : <div onClick={props.onClick} className="cancelable-title">
+                <div className="close-x">&times;</div>
+                <div>{`${props.year.value} ${genderTitle}${props.sport.value}`}</div>
+              </div>}
         </div>
     </header>
   )
