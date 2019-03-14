@@ -56,3 +56,16 @@
 .bronze {
   background-color: #cd7f32;
 }
+
+@media (max-width: 768px) {
+  .table {
+    padding: 0 10px;
+    margin-bottom: 40px;
+  }
+  .row {
+    padding: 15px 0;
+  }
+  .metal-label {
+    display: none;
+  }
+}

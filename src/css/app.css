@@ -56,6 +56,8 @@ html, body {
 
 .cancelable-title {
   display: flex;
+  align-items: center;
+  animation: shiftUp 0.3s;
 }
 
 .cancelable-title:hover {
@@ -64,11 +66,8 @@ html, body {
 }
 
 .cancelable-title .close-x {
-  display: flex;
-  height: 20px;
-  width: 30px;
-  align-items: center;
-  justify-content: center;
+  display: inline-flex;
+  margin: -3px 6px 0 0;
   font-size: 140%;
   font-weight: lighter;
 }
@@ -144,10 +143,6 @@ html, body {
   animation: shiftUp 1.2s;
 }
 
-.cancelable-title {
-  animation: shiftUp 0.3s;
-}
-
 @keyframes selectFade {
   0%   { opacity: 0; max-height: 0; transform: translateY(40px); }
   100% { opacity: 1; max-height: 60px; transform: translateY(0); }
@@ -167,3 +162,18 @@ html, body {
   0%   { opacity: 0; transform: translateY(30px); }
   100% { opacity: 1; transform: translateY(0); }
 }
+
+@media screen and (max-width: 768px) {
+  .app-container {
+    font-size: 90%;
+  }
+  .app-content {
+    padding: 15px;
+  }
+  .title,
+  .app-header {
+    font-size: 1.1rem;
+  }
+}
+
+

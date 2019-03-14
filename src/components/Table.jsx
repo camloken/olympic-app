@@ -25,7 +25,7 @@ const Table = props => {
         />
         <b className="cursor" title={a.Team}>{a.NOC}</b>
         <div className="flex-1">{a.Name}</div>
-        <div>{a.Medal}</div>
+        <div className="metal-label">{a.Medal}</div>
         <div className={a.Medal.toLowerCase()} />
       </div>
     )
