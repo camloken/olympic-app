@@ -1,14 +1,1 @@
-<?xml version="1.0"?>
-<svg xmlns="http://www.w3.org/2000/svg" height="600" width="900">
-<rect style="fill:#fff" width="900" height="600"/>
-<g stroke-width="17.67258644" stroke="#000" fill="none">
-<circle cx="232.34814" cy="253.49319" r="91.618408" stroke="#0885c2"/>
-<circle cx="450" cy="253.49319" r="91.618408"/>
-<circle cx="667.65186" cy="253.49319" r="91.618408" stroke="#ed334e"/>
-<circle cx="341.17407" cy="346.50681" r="91.618408" stroke="#fbb132"/>
-<circle cx="558.82593" cy="346.50681" r="91.618408" stroke="#1c8b3c"/>
-<path d="M 305.64287,198.52216 A 91.618406,91.618406 0 0 1 305.64287,308.46424" stroke="#0885c2"/>
-<path d="M 523.29472,198.52216 A 91.618406,91.618406 0 0 1 523.29472,308.46424 M 450,345.1116 A 91.618406,91.618406 0 0 1 395.02895,326.78792"/>
-<path d="M 667.65184,345.1116 A 91.618406,91.618406 0 0 1 612.6808,326.78792" stroke="#ed334e"/></g></svg>
-
-
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%" height="100%" viewBox="0 0 640 480" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;"><rect x="0" y="0" width="640" height="480" style="fill:#fff;"/><g><circle cx="145.879" cy="202.795" r="73.295" style="fill:none;stroke:#0885c2;stroke-width:14.14px;"/><circle cx="320" cy="202.795" r="73.295" style="fill:none;stroke:#000;stroke-width:14.14px;"/><circle cx="494.121" cy="202.795" r="73.295" style="fill:none;stroke:#ed334e;stroke-width:14.14px;"/><circle cx="232.939" cy="277.205" r="73.295" style="fill:none;stroke:#fbb132;stroke-width:14.14px;"/><circle cx="407.061" cy="277.205" r="73.295" style="fill:none;stroke:#1c8b3c;stroke-width:14.14px;"/><path d="M204.514,158.818c19.489,25.984 19.489,61.969 0,87.953" style="fill:none;stroke:#0885c2;stroke-width:14.14px;"/><path d="M378.636,158.818c19.488,25.984 19.488,61.969 0,87.953m-58.636,29.318c-15.856,0 -31.292,-5.145 -43.977,-14.659" style="fill:none;stroke:#000;stroke-width:14.14px;"/><path d="M494.121,276.089c-15.856,0 -31.291,-5.145 -43.976,-14.659" style="fill:none;stroke:#ed334e;stroke-width:14.14px;"/></g></svg>
