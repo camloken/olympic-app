@@ -5,7 +5,7 @@ import '../css/results.css'
 
 const Results = props => {
   const { data } = props
-  const sorted = data.sort((a, b) => a['Event'].localeCompare(b['Event']))
+  const sorted = data.sort((a, b) => a['Event'].localeCompare(b['Event'], 'en', { numeric: true }))
 
   let eventName = null
   let groups = []
