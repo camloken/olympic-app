@@ -27,10 +27,9 @@ class App extends Component {
       header: true,
       dynamicTyping: true,
       complete: results => {
-        const all = results.data
         const medalists = results.data.filter( a => a.Medal !== 'NA' )
         const yearList = this.getUniqueList( medalists, 'Games' )
-        this.setState({ medalists, yearList, all })
+        this.setState({ medalists, yearList })
       }
     })
   }
@@ -112,8 +111,6 @@ class App extends Component {
   }
 
   render() {
-    const test = this.state.all && this.state.all.filter(a => a.Year === 1908 && a.Sport === 'Athletics' && a.Event === `Athletics Men's High Jump`)
-    console.log(test)
     const { yearList, results } = this.state
     return (
       <div className="app">
