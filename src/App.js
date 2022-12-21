@@ -23,7 +23,7 @@ class App extends Component {
   componentDidMount() {
     // Get past Olympics data and add it to state
     Papa.parse('./athlete_events.csv', {
-    	download: true,
+      download: true,
       header: true,
       dynamicTyping: true,
       complete: results => {

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 640 480" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(160,0,0,160,-80,0)">
+        <g id="Layer-2" serif:id="Layer 2">
+            <g id="g1348">
+                <g id="g4951">
+                    <g id="black_stripe" transform="matrix(0.8,0,0,1,0.5,0)">
+                        <rect x="0" y="0" width="5" height="3"/>
+                    </g>
+                    <g id="red_stripe" transform="matrix(0.8,0,0,1,0.5,0)">
+                        <rect x="0" y="1" width="5" height="2" style="fill:rgb(221,0,0);"/>
+                    </g>
+                    <g id="gold_stripe" transform="matrix(0.8,0,0,1,0.5,0)">
+                        <rect x="0" y="2" width="5" height="1" style="fill:rgb(255,206,0);"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

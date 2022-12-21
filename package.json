@@ -2,6 +2,7 @@
   "name": "ui-challenge-01",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "flag-icon-css": "^3.3.0",
     "papaparse": "^4.6.1",
@@ -11,8 +12,8 @@
     "react-select": "^2.4.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

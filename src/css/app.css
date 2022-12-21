@@ -15,6 +15,13 @@ html, body {
 .app,
 .app-container,
 .app-content {
+  height: 100vh;
+}
+
+#root,
+.app,
+.app-container,
+.app-content {
   display: flex;
   flex-direction: column;
   flex: 1;
