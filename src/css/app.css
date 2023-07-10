@@ -50,38 +50,50 @@ html, body {
   z-index: 1;
 }
 
+.app-header-inner {
+  display: flex;
+  padding: 0 20px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
+}
+
 .app-content {
   padding: 20px;
   overflow-y: auto;
 }
 
 .title {
+  margin-left: 4px;
   font-weight: 600;
   font-size: 1.25rem;
   color: var(--text-light-grey);
 }
 
-.cancelable-title {
+.close-x {
   display: flex;
-  align-items: center;
-  animation: shiftUp 0.3s;
+  font-size: 175%;
+  font-weight: lighter;
+  justify-content: flex-end;
+  align-content: center;
+  padding: 0 4px 4px 22px;
 }
 
-.cancelable-title:hover {
+.close-x:hover {
   cursor: hand;
   color: red;
-}
-
-.cancelable-title .close-x {
-  display: inline-flex;
-  margin: -3px 6px 0 0;
-  font-size: 140%;
-  font-weight: lighter;
 }
 
 .logo {
   height: 36px;
   margin: 0 15px 0 0;
+}
+
+.logo.small {
+  height: auto;
+  width: 52px;
+  margin: 0;
 }
 
 .flex-colunm {
@@ -150,6 +162,10 @@ html, body {
   animation: shiftUp 1.2s;
 }
 
+.fade-in {
+  animation: fadeIn 1s;
+}
+
 @keyframes selectFade {
   0%   { opacity: 0; max-height: 0; transform: translateY(40px); }
   100% { opacity: 1; max-height: 60px; transform: translateY(0); }
@@ -170,12 +186,17 @@ html, body {
   100% { opacity: 1; transform: translateY(0); }
 }
 
+@keyframes fadeIn {
+  0%   { opacity: 0 }
+  100% { opacity: 1 }
+}
+
 @media screen and (max-width: 768px) {
   .app-container {
     font-size: 90%;
   }
   .app-content {
-    padding: 15px;
+    padding: 0 15px;
   }
   .title,
   .app-header {
